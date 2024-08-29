@@ -1,0 +1,47 @@
+/* src/components/Header.css */
+
+.header {
+  position: fixed; /* Fix the header to the top */
+  top: 0; /* Align it to the top of the page */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Full width */
+  background-color: #007bff; /* Primary color */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 1000; /* Ensure it is above other elements */
+}
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+  }
+  
+  .nav-logo a {
+    color: #fff; /* Logo color */
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Inline list items */
+    gap: 2rem; /* Space between links */
+  }
+  
+  .nav-links li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Removes underline */
+    font-size: 1.1rem; /* Adjust link size */
+    transition: color 0.3s; /* Smooth transition */
+  }
+  
+  .nav-links li a:hover {
+    color: #f9f9f9; /* Light color on hover */
+  }
+  

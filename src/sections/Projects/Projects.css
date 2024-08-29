@@ -1,0 +1,73 @@
+/* Projects.css */
+
+#projects {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center; /* Center-align content */
+    margin-top: 50px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem; /* Space below the title */
+    color: #333; /* Dark color for better visibility */
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between grid items */
+    justify-items: center; /* Center align items within the grid */
+  }
+  
+  .card-container {
+    background-color: #e9e8e8; /* White background for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
+    max-width: 300px; /* Max width for the card */
+    text-align: center; /* Center text inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .card-container:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  .card-container img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes bottom space */
+  }
+  
+  .card-container h3 {
+    font-size: 1.5rem; /* Larger font for the project name */
+    margin: 1rem 0 0.5rem; /* Space above and below the heading */
+    color: #007bff; /* Highlight color for the project name */
+  }
+  
+  .card-container p {
+    font-size: 1rem; /* Standard font size for the description */
+    color: #555; /* Softer color for secondary information */
+    margin-bottom: 1.5rem; /* Space below the description */
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem; /* Smaller title font size on mobile */
+    }
+  
+    .card-container {
+      margin-bottom: 2rem; /* Space between cards on mobile */
+    }
+  
+    .card-container h3 {
+      font-size: 1.3rem; /* Adjust heading size for mobile */
+    }
+  
+    .card-container p {
+      font-size: 0.9rem; /* Adjust paragraph size for mobile */
+    }
+  }
+  
